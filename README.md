@@ -1,3 +1,5 @@
+import static java.lang.Boolean.TRUE;
+
 public class DiningPhilo {
     //Inits
 
@@ -22,25 +24,56 @@ public class DiningPhilo {
 
     }//End: Think
     public void Take_forks(){
+        System.out.println("The philosopher is thinking");
 
 
     }//End: Take_forks
     public void Eat(){
+        System.out.println("The philosopher is eating");
 
 
     }//End: Eat
-    public void put_forks(){
+    public void Put_forks(){
+        System.out.println("The philosopher is placing forks");
 
 
     }//End: put_forks
 
-    public void philosopher(){
+    
+    public void philosopher(int i) {
+        while (TRUE) {
+            Think();
+            Take_forks();
+            Eat();
+            Put_forks();
+        }//End: while
+
+    }//End: philosopher
+    
+    public static void take_forks(int i) {
+        //down(&mutex);
+        //state[i] = HUNGRY;
+        //test(i)
+        //up(&mutex)
+        //down(&s[i]);
+    }//End: take_forks
+    
+    public static void put_forks(int i) {
+        //down(&mutex);
+        //state[i] = THINKING
+        //test(LEFT)
+        //test(RIGHT)
+        //up(&mutex)
+    }//End: put_forks
+    
+    public static void test(int i){
+        //if(state[int i]==HUNGRY && state[LEFT] != EATING && state[RIGHT] !=EATING){
+            //state[i] = EATING;
+            //up(&s[i]);
+        
+    }//End: test
+}//End: DiningPhilo
 
 
-    }
-
-
-
-}//End: class_Dining Philo
 
 

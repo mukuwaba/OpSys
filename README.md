@@ -15,15 +15,32 @@ public class DiningPhilo {
 
     int state = N;
 
-    public void philosopher{
+    //Create Method's for Philosopher's actions
+    public void Think(){
+        System.out.println("The philosopher is thinking");
+
+
+    }//End: Think
+    public void Take_forks(){
+
+
+    }//End: Take_forks
+    public void Eat(){
+
+
+    }//End: Eat
+    public void put_forks(){
+
+
+    }//End: put_forks
+
+    public void philosopher(){
 
 
     }
-    public void THINK{
 
 
-    }
 
-}
+}//End: class_Dining Philo
 
 

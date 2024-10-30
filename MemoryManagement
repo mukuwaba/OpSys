@@ -1,0 +1,37 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        //Inits
+        string VirtualAddress;
+
+        int [,] PageTable = {
+            {0,010},
+            {1,001},
+            {2,110},
+            {3,000},
+            {4,100},
+            {5,011},
+            {6,000},
+            {7,000},
+            {8,000},
+            {9,101},
+            {10,000},
+            {11,111},
+            {12,000},
+            {13,000},
+            {14,000},
+            {15,000}
+            
+    
+        };//End: array
+        
+        Console.WriteLine("Input Virtual Address (Binary, 4-Bit): ")
+        string VirtualAddress = Console.ReadLine();
+    }
+}

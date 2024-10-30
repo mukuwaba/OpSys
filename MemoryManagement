@@ -1,8 +1,8 @@
 //This program is written in C#
 using System;
 
-public class MemoryManagement
-{
+public class MemoryManagement{
+    
     public static void Main(string[] args){
         
         // Inits
@@ -31,15 +31,20 @@ public class MemoryManagement
 
         //Prompt user for binary input
         Console.WriteLine("Input Virtual Address (Binary, 3-Bit): ");
+       
+       //Store user input in variable
         VirtualAddress = Console.ReadLine();
 
         //Loop through array and output values
         for (int i = 0; i < 16; i++){
+            
             if (PageTable[i, 0] == VirtualAddress){
                 
                 PhysicalAddress = PageTable[i, 1];
                 break; // Exit loop 
-            }
+            
+                
+            }//End: if 
         }//End: for
         
         //Space for cleaner interface
@@ -47,5 +52,6 @@ public class MemoryManagement
 
         //Output Physical Address to User
         Console.WriteLine("Physical Address: " + VirtualAddress + Additional_Bits);
+        
     }//End: Main
 }//End: MemoryMangement

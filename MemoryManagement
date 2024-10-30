@@ -8,6 +8,7 @@ public class MemoryManagement
         string VirtualAddress = "";
         int sub = 0;
         string PhysicalAddress= ""; 
+        string Additional_Bits= "";
 
         string [,] PageTable = {
             {"0","010"},
@@ -43,7 +44,7 @@ public class MemoryManagement
         }
         
         
-        Console.WriteLine("physical address: "+PhysicalAddress);
+        Console.WriteLine("physical address: "+PhysicalAddress ""+Additional_Bits);
         
         
         

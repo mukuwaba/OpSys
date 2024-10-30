@@ -1,14 +1,12 @@
-// Online C# Editor for free
-// Write, Edit and Run your C# code using C# Online Compiler
-
 using System;
 
-public class HelloWorld
+public class MemoryManagement
 {
-    public static void Main(string[] args)
-    {
+    public static void Main(string[] args){
+        
         //Inits
         string VirtualAddress;
+        int sub = 0;
 
         int [,] PageTable = {
             {0,010},
@@ -31,7 +29,13 @@ public class HelloWorld
     
         };//End: array
         
-        Console.WriteLine("Input Virtual Address (Binary, 4-Bit): ")
+        Console.WriteLine("Input Virtual Address (Binary, 4-Bit): ");
         string VirtualAddress = Console.ReadLine();
-    }
-}
+        
+        for(int i=0; i < 16; i++){
+            
+            
+        }
+        
+    }//End: method
+}//End: MemoryManagement

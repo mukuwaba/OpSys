@@ -6,9 +6,9 @@ public class MemoryManagement
     public static void Main(string[] args){
         
         // Inits
-        string VirtualAddress = "";
-        string PhysicalAddress = "";
-        string Additional_Bits = "0000000000100";
+        string VirtualAddress = "";//storage variable
+        string PhysicalAddress = "";//storage variable
+        string Additional_Bits = "0000000000100";//Hardcoded binary
 
         string[,] PageTable = {
             {"0","010"},
@@ -27,7 +27,7 @@ public class MemoryManagement
             {"13","000"},
             {"14","000"},
             {"15","000"}
-        };
+        };//End: array
 
         //Prompt user for binary input
         Console.WriteLine("Input Virtual Address (Binary, 3-Bit): ");
@@ -41,6 +41,9 @@ public class MemoryManagement
                 break; // Exit loop 
             }
         }//End: for
+        
+        //Space for cleaner interface
+        Console.WriteLine("");
 
         //Output Physical Address to User
         Console.WriteLine("Physical Address: " + VirtualAddress + Additional_Bits);

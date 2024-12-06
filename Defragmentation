@@ -13,7 +13,9 @@ public class Defrag {
 
     for(){
         System.out.println(Please write values in the inner block);
-        Sc
+        //Scanner for user input
+        //Enter element into the array
+        
         break;
     }//End: for
 

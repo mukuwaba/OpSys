@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Defrag {
+
+    Scanner input = new Scanner(System.in);
+
+    String[] MemoryBlocksInner = {};
+    String[] MemoryBlocksMiddle = {};
+    String[] MemoryBlocksOuter = {};
+
+    //three demensional array
+    //string[][][]
+
+    for(){
+        System.out.println(Please write values in the inner block);
+        Sc
+        break;
+    }//End: for
+
+        for(){
+        System.out.println(Please write values in the middle block);
+        break;
+    }//End: for
+
+        for(){
+        System.out.println(Please write values in the outer block);
+        break;
+    }//End: for
+
+
+    public void MoveInnerSector{
+
+
+    }//End: MoveInnerSector
+
+    public void MoveMiddleSector{
+
+
+    }//End: MoveInnerSector
+
+    public void MoveOuterSector{
+
+
+
+    }//End: MoveOuterSector
+
+
+
+
+//Notes
+    //minimal arm movements is ideal
+    //move individual blocks
+    //must use an array
+
+
+
+
+
+
+}//End class

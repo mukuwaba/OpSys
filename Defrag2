@@ -1,0 +1,39 @@
+import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
+
+
+
+public class Defrag2 {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        //Arrays to store blocks within sectors
+        List<String> inner = new ArrayList<>();
+        List<String> middle = new ArrayList<>();
+        List<String> outer = new ArrayList<>();
+
+        //Inform user of input format
+        System.out.println("Enter values for sectors by separating blocks with spaces. Example: A B '' C");
+
+        //Input values into sectors
+        System.out.println("Please enter values for the inner sector:");
+        inner = parseInput(input.nextLine());//input values into array
+
+        System.out.println("Please enter values for the middle sector:");
+        middle = parseInput(input.nextLine());//input values into array
+
+        System.out.println("Please enter values for the outer sector:");
+        outer = parseInput(input.nextLine());//input values into array
+
+       
+        System.out.println("\nPre-Defragmentation:");
+        printSector("Inner", inner);
+        printSector("Middle", middle);
+        printSector("Outer", outer);
+
+        input.close(); 
+//New method to define input
+    }
